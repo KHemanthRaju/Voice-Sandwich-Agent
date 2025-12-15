@@ -25,14 +25,14 @@ echo ""
 echo "📦 Step 1: Building Lambda package..."
 cd components/typescript
 pnpm install
-pnpm run build
 cd ../..
 
 # Create deployment package
 mkdir -p infrastructure/lambda-package
-cp -r components/typescript/dist infrastructure/lambda-package/
+cp -r components/typescript/src infrastructure/lambda-package/
 cp -r components/typescript/node_modules infrastructure/lambda-package/
 cp components/typescript/package.json infrastructure/lambda-package/
+cp components/typescript/tsconfig.json infrastructure/lambda-package/
 
 echo ""
 echo "📤 Step 2: Packaging Lambda function..."

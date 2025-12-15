@@ -125,3 +125,39 @@ The pipeline communicates via a unified event stream:
 | `tool_result` | Agent → Client | Tool execution result |
 | `agent_end` | Agent → TTS | Signals end of agent turn |
 | `tts_chunk` | TTS → Client | Audio chunk for playback |
+
+## Deployment
+
+### Quick Deploy (Railway - Recommended)
+
+The easiest way to deploy:
+
+```bash
+cd components/typescript
+railway init
+railway up
+```
+
+See **[Simple Deployment Guide](infrastructure/simple-deploy.md)** for:
+- Railway deployment (1-click deploy)
+- Fly.io deployment
+- VPS deployment (DigitalOcean, Linode)
+
+### Production Deployment
+
+For production workloads, see **[Deployment Options](infrastructure/deployment-options.md)**:
+- AWS Fargate (serverless containers)
+- AWS EC2 with Auto Scaling
+- Kubernetes
+
+### Frontend Deployment
+
+Deploy the frontend to AWS Amplify or Vercel - see [Amplify Guide](infrastructure/amplify-deploy.md)
+
+---
+
+## Repository
+
+**GitHub:** https://github.com/KHemanthRaju/Voice-Sandwich-Agent
+
+Feel free to star ⭐ the repo if you find it useful!
