@@ -1,0 +1,45 @@
+# Environment variables
+.env
+.env.local
+.env.production
+
+# Dependencies
+node_modules/
+.venv/
+__pycache__/
+
+# Build outputs
+dist/
+build/
+*.pyc
+*.pyo
+*.pyd
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Deployment
+infrastructure/lambda-package/
+infrastructure/lambda-function.zip
+
+# Test files
+components/python/test_assemblyai.py
+
+# Secrets
+*.pem
+*.key
+credentials.json
